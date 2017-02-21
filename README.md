@@ -11,6 +11,18 @@ Summary: Python port of Browserscope's user agent parser
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ua-parser-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ua-parser-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/ua-parser-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ua-parser-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ua-parser-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ua-parser-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ua-parser/badges/version.svg)](https://anaconda.org/conda-forge/ua-parser)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ua-parser/badges/downloads.svg)](https://anaconda.org/conda-forge/ua-parser)
+
 Installing ua-parser
 ====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `ua-parser` available on your plat
 ```
 conda search ua-parser --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ua-parser-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ua-parser-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ua-parser-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ua-parser-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ua-parser-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ua-parser-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ua-parser/badges/version.svg)](https://anaconda.org/conda-forge/ua-parser)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ua-parser/badges/downloads.svg)](https://anaconda.org/conda-forge/ua-parser)
 
 
 Updating ua-parser-feedstock

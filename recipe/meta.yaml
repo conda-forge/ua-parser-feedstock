@@ -1,15 +1,16 @@
 {%set name = "ua-parser" %}
-{%set version = "0.7.1" %}
+{%set version = "0.7.3" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "e1f7cb16ccb68d6c93b19348e678500bec8cd1f692e49214dd38ca2d100ada9b" %}
+{%set hash_val = "0aafb05a67b621eb4d69f6c1c3972f2d9443982bcd9132a8b665d90cd48a1add" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
@@ -32,7 +33,9 @@ test:
 about:
   home: https://github.com/ua-parser/uap-python
   license: Apache 2.0
+  license_family: Apache
   summary: "Python port of Browserscope's user agent parser"
+  dev_url: https://github.com/ua-parser/uap-python
 
 extra:
   recipe-maintainers:
