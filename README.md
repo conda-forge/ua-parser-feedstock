@@ -14,9 +14,7 @@ Summary: Python port of Browserscope's user agent parser
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ua-parser-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ua-parser-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ua-parser-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ua-parser-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ua-parser-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ua-parser-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ua-parser-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ua-parser-feedstock)
 
 Current release info
 ====================
