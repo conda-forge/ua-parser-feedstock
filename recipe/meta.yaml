@@ -1,8 +1,8 @@
 {%set name = "ua-parser" %}
-{%set version = "0.7.3" %}
+{%set version = "0.8.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "0aafb05a67b621eb4d69f6c1c3972f2d9443982bcd9132a8b665d90cd48a1add" %}
+{%set hash_val = "97bbcfc9321a3151d96bb5d62e54270247b0e3be0590a6f2ff12329851718dcb" %}
 
 package:
   name: {{ name|lower }}
@@ -10,17 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - pyyaml
 
   run:
