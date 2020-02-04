@@ -1,8 +1,8 @@
 {%set name = "ua-parser" %}
-{%set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "97bbcfc9321a3151d96bb5d62e54270247b0e3be0590a6f2ff12329851718dcb" %}
+{% set hash_val = "be17242abcd4f3d11543e9b82826f152b47c724623a32bb94ce02e549b0cfce2" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
