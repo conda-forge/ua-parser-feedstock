@@ -17,7 +17,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - pyyaml >=5.4.0,==5.4.*
+    - pyyaml >=5.4.0,<=5.5
   run:
     - python >=3.6
 
