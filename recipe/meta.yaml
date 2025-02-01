@@ -1,5 +1,5 @@
 {% set name = "ua-parser" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ua_parser-{{ version }}.tar.gz
-  sha256: a9740f53f4fbb72b7a03d304cae32a2785cafc55e8207efb74877bba17c35324
+  sha256: f9d92bf19d4329019cef91707aecc23c6d65143ad7e29a233f0580fb0d15547d
 
 build:
   noarch: python
